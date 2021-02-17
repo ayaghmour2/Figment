@@ -110,6 +110,7 @@ CREATE TABLE Players
   Demand Integer ,
   Accuracy Text ,
   Notes Text ,
+  Year Text ,
   Primary Key (`Name`)
 )
 ;
