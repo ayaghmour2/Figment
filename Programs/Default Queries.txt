@@ -1,0 +1,22 @@
+## Default Batting
+
+SELECT `Name`, Position, `Number`, Age, Bats, Throws, `Level`, School, Competition, Demand, G, `GS (Bat)`, PA, AB, H, `2B`, `3B`, HR, RBI, R, BB, SO, AVG, OBP, SLG, BABIP, WAR, SB, CS
+FROM Career
+WHERE Position NOT LIKE '%P%'
+ORDER BY "Name"
+;
+
+## Default Pitching
+
+SELECT `Name`, Position, `Number`, Age, Bats, Throws, `Level`, School, Competition, Demand, GP, GS, W, L, SV, IP, HA, HR, R, ER, BB, K, BB9, K9, ERA, WHIP, FIP, WAR
+FROM Career
+WHERE Position LIKE '%P%'
+ORDER BY "Name"
+;
+
+## General Information
+
+SELECT `Name`, Position, `Number`, Age, Nationality, Height, `Weight`, Bats, Throws, `Level`, School, Competition, Demand
+FROM Career
+ORDER BY "Name"
+;
