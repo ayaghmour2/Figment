@@ -20,3 +20,19 @@ SELECT `Name`, Position, `Number`, Age, Nationality, Height, `Weight`, Bats, Thr
 FROM Career
 ORDER BY "Name"
 ;
+
+## High Schoolers
+
+SELECT `Name`, Position, `Number`, Age, Nationality, Height, `Weight`, Bats, Throws, `Level`, School, Competition, Demand
+FROM Career
+WHERE `Level` LIKE '%HS%'
+ORDER BY "Name"
+;
+
+## College Kids
+
+SELECT `Name`, Position, `Number`, Age, Nationality, Height, `Weight`, Bats, Throws, `Level`, School, Competition, Demand
+FROM Career
+WHERE `Level` LIKE '%CO%'
+ORDER BY "Name"
+;
