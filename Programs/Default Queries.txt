@@ -1,6 +1,6 @@
 ## Default Batting
 
-SELECT `Name`, Position, `Number`, Age, Bats, Throws, `Level`, School, Competition, Demand, G, `GS (Bat)`, PA, AB, H, `2B`, `3B`, HR, RBI, R, BB, SO, AVG, OBP, SLG, BABIP, WAR, SB, CS
+SELECT `Name`, Position, `Number`, Age, Bats, Throws, `Level`, School, Competition, Demand, G, `GS (Bat)`, PA, AB, H, `2B`, `3B`, HR, RBI, R, BB, SO, AVG, OBP, SLG, OPS, BABIP, WAR, SB, CS
 FROM Career
 WHERE Position NOT LIKE '%P%'
 ORDER BY "Name"
