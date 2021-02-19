@@ -19,6 +19,8 @@ sqlite3
 
 .open --new "D:/Documents/GitHub/Figment/Database/Draft.db"
 
+## When you come back to the database, delete the "--new" portion and you can open your already created database.
+
 .mode column
 .headers on
 
