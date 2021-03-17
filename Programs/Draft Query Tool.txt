@@ -115,7 +115,7 @@ CREATE TABLE "1934"
   Accuracy Text ,
   `Year` Integer ,
   Notes Text ,
-  Primary Key (`Name`)
+  Primary Key (ID)
 )
 ;
 
@@ -209,7 +209,7 @@ CREATE TABLE "1935"
   Accuracy Text ,
   `Year` Integer ,
   Notes Text ,
-  Primary Key (`Name`)
+  Primary Key (ID)
 )
 ;
 
@@ -300,10 +300,10 @@ CREATE TABLE Career
   rWAR Integer ,
   Demand Integer ,
   Sign Text ,
-  Accuracy Text ,
+  Accuracy Text , 
   `Year` Integer ,
   Notes Text ,
-  Primary Key (`Name`)
+  Primary Key (ID)
 )
 ;
 
