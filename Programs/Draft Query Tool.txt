@@ -15,14 +15,23 @@
 
 sqlite3
 
+## To make output look nicer:
+
+.mode column
+.headers on
+
 ## Creating the database. Make sure to change the directory to your personal directory and load the :
 
 .open --new "D:/Documents/GitHub/Figment/Database/Draft.db"
 
 ## When you come back to the database, delete the "--new" portion and you can open your already created database.
 
-.mode column
-.headers on
+## Note: the database is already pre-built on github. Below show how the tables were created in case you want to
+## create your own tables. All .csv files have the same format as the table below (except for 1935 class), so if you
+## wanted to load up a future class, you can follow the same template by changing the .csv file and location.
+
+## To access the prebuilt database, copy the Draft.db file from github on to your personal device. Then change the
+"D:/Documents/" path above to the location on your computer.
 
 ## Some categories have weird names: Batter GS are GS (Bat); Batter BB are Walks; Pitcher BABIP is BABIP (Opponent);
 ## Pitcher WAR is pWAR. Also, the `` symbol (you only need one) is needed around words that are either a function
