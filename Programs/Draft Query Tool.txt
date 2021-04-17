@@ -31,7 +31,7 @@ sqlite3
 ## wanted to load up a future class, you can follow the same template by changing the .csv file and location.
 
 ## To access the prebuilt database, copy the Draft.db file from github on to your personal device. Then change the
-"D:/Documents/" path above to the location on your computer.
+## "D:/Documents/" path above to the location on your computer.
 
 ## Some categories have weird names: Batter GS are GS (Bat); Batter BB are Walks; Pitcher BABIP is BABIP (Opponent);
 ## Pitcher WAR is pWAR. Also, the `` symbol (you only need one) is needed around words that are either a function
