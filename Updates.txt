@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+4-17-21: Fixed demand to be numbers for 1936 Draft Class. Will show up on 1936 Season and Career statistics.
+
 4-17-21: Added the brand new 1939 draft class! Changed the name of the origional database to 1935. New database for the 1936 class named Draft. Edited tables to take out "Year" and "Notes" coulmns. Added 1936 statistics for all 1936, 1937, 1938, and 1939 draftees. Updated career stats for all 1936, 1937, and 1938 draftees. Added new players created in the June draft reveal. Added 1936 amateur statistics.
 
 3-17-21: With the season finished, all velocities have been updated to current values as well as scouting accuracies. Both are in terms of OSA.
