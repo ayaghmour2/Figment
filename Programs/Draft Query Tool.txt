@@ -26,7 +26,7 @@ sqlite3
 
 ## When you come back to the database, delete the "--new" portion and you can open your already created database.
 
-## Note: the database is already pre-built on github. Below show how the tables were created in case you want to
+## Note: the database was already built and is located on github. Below shows how the tables were created. You can
 ## create your own tables. All .csv files have the same format as the table below (except for 1935 class), so if you
 ## wanted to load up a future class, you can follow the same template by changing the .csv file and location.
 
