@@ -1,47 +1,33 @@
-## This program is used to create queries based on statistics pulled from the in game CSV files. The beginning part
-## will be used to explain the code. Below all the text will be the actual code to run. You are first using a
-## database I created to then create queries so you can filter through the draft pool quicker and easier then while 
-## in game and without having to open the game up. The last column is Scout Accuracy. You will want to edit the CSV
-## file to change the last category to your Scouts values. You can pull up the Draft Class in game and then export
-## any view that has your scout accuracy listed. You can then replace the default scout accuracy with your scouts
-## and the last column is so you can type notes on the .csv file about your scouts report or (if your handy with
-## SQLite/check out the tutorial) use your IDE/Code Editor to fill the empty cells. It is not perfect, but hope it 
-## will help you guys out with the chaotic process that is the draft!
-
-## To begin, you will need to download and then call sqlite. To download: 
-## https://stackoverflow.com/questions/29042954/sqlite-path-environment-variable-db-browser-sqlite
-
-## To call:
+## This code was written with SQL
 
 sqlite3
 
-## To make output look nicer:
+## The following code was used to create the Ultimate Draft databse. This database takes the
+## seasonal statistics in each calender year of the game generated draft classes.
+
+## To load the already created database, use the second portion of the code. Make sure to
+## replace the directory with your personal directory where your github is located.
+
+## .open --new  "D:/Documents/GitHub/Figment/Database/1935 Draft.db"
+## .open --new  "D:/Documents/GitHub/Figment/Database/Ultimate Draft Database.db"
+.open "D:/Documents/GitHub/Figment/Database/Ultimate Draft Database.db"
+
+## You will also want to turn on headers and change the mode to column for nicer output in
+## the console.
 
 .mode column
 .headers on
 
-## Creating the database. Make sure to change the directory to your personal directory and load the :
+## Once the database is loaded, you can create your own queries (or use one of the default
+## options as well) to search for players located in one of the tables. Each table consists
+## of the single season statline for each amateur player in the given season. Each table is
+## named for the year. So for the 1934 stats, the table is called 1934.
 
-.open --new "D:/Documents/GitHub/Figment/Database/Draft.db"
-.open "D:/Documents/GitHub/Figment/Database/Draft.db"
+## This portion is not needed to run, but it shows how each table was created.
 
-## When you come back to the database, delete the "--new" portion and you can open your already created database.
-
-## Note: the database was already built and is located on github. Below shows how the tables were created. You can
-## create your own tables. All .csv files have the same format as the table below (except for 1935 class), so if you
-## wanted to load up a future class, you can follow the same template by changing the .csv file and location.
-
-## To access the prebuilt database, copy the Draft.db file from github on to your personal device. Then change the
-## "D:/Documents/" path above to the location on your computer.
-
-## Some categories have weird names: Batter GS are GS (Bat); Batter BB are Walks; Pitcher BABIP is BABIP (Opponent);
-## Pitcher WAR is pWAR. Also, the `` symbol (you only need one) is needed around words that are either a function
-## name (like there is a function called number), have a space (see city of Birth), or a number. You will want to 
-## import the stats of each season for the pool.
-
-CREATE TABLE "1934"
+CREATE TABLE "1934 Season"
 (
-  ID Integer ,
+  ID Text ,
   Position Text ,
   'Number' Text ,
   'Name' Text ,
@@ -123,17 +109,17 @@ CREATE TABLE "1934"
   Demand Integer ,
   `Sign` Text ,
   Accuracy Text ,
-  Primary Key (ID)
+  `Year` Integer ,
+  Notes Text ,
+  Primary Key (`ID`)
 )
 ;
 
-## Select the corresponding statistical year:
+.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1935/1934.csv" "1934 Season"
 
-.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1936/1934.csv" 1934
-
-CREATE TABLE "1935"
+CREATE TABLE "1935 Season"
 (
-  ID Integer ,
+  ID Text ,
   Position Text ,
   'Number' Text ,
   'Name' Text ,
@@ -213,19 +199,19 @@ CREATE TABLE "1935"
   pWAR Integer ,
   rWAR Integer ,
   Demand Integer ,
-  Sign Text ,
+  `Sign` Text ,
   Accuracy Text ,
-  Primary Key (ID)
+  `Year` Integer ,
+  Notes Text ,
+  Primary Key (`ID`)
 )
 ;
 
-## Select the corresponding statistical year:
+.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1935/1935.csv" "1935 Season"
 
-.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1936/1935.csv" 1935
-
-CREATE TABLE "1936"
+CREATE TABLE "1936 Season"
 (
-  ID Integer ,
+  ID Text ,
   Position Text ,
   'Number' Text ,
   'Name' Text ,
@@ -305,18 +291,20 @@ CREATE TABLE "1936"
   pWAR Integer ,
   rWAR Integer ,
   Demand Integer ,
-  Sign Text ,
+  `Sign` Text ,
   Accuracy Text ,
-  Primary Key (ID)
+  `Year` Integer ,
+  Notes Text ,
+  Primary Key (`ID`)
 )
 ;
 
-.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1936/1936.csv" 1936
+.import --csv "D:/Documents/GitHub/Figment/Data/Amateur Stats/1936.csv" "1936 Season"
 
 
-CREATE TABLE Career
+CREATE TABLE "Career"
 (
-  ID Integer ,
+  ID Text ,
   Position Text ,
   'Number' Text ,
   'Name' Text ,
@@ -396,79 +384,14 @@ CREATE TABLE Career
   pWAR Integer ,
   rWAR Integer ,
   Demand Integer ,
-  Sign Text ,
-  Accuracy Text , 
-  Primary Key (ID)
+  `Sign` Text ,
+  Accuracy Text ,
+  `Year` Integer ,
+  Notes Text ,
+  Primary Key (`ID`)
 )
 ;
 
-.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1936/Career.csv" Career
+.import --csv "D:/Documents/GitHub/Figment/Data/Draft Classes/1935/Career.csv" "Career"
 
 
-## First, we want to only look at the current season. Here are all pitchers who had an ERA below 3.00:
-
-SELECT `Name`, ERA
-FROM "1935"
-WHERE ERA < 3.00
-AND IP > 20
-;
-
-## Conversely, we could look only at 1934 or career by switching the FROM portion.
-
-SELECT `Name`, ERA
-FROM "1934"
-WHERE ERA < 3.00
-AND IP > 20
-;
-
-SELECT `Name`, ERA
-FROM Career
-WHERE ERA < 3.00
-AND IP > 40
-;
-
-## So then, which 1935 eligible pitcher had the best ERA in his career? I think we can all guess who that might be:
-
-SELECT `Name`, ERA
-FROM Career
-WHERE ERA < 1.50
-AND IP > 40
-ORDER BY ERA
-;
-
-## Of course, there is more to determining if a pitcher is good then just his ERA. You can filter by an ERA measure, but 
-## that does not mean you just have to select ERA.
-
-SELECT `Name`, `Level`, School, Competition, `Commit`, W, L, ERA, IP, R, ER, BB, K, WHIP
-FROM Career
-WHERE ERA < 1.50
-AND IP > 40
-ORDER BY ERA
-;
-
-## Now you have all the players you want to compare. Even better, you can export this as a CSV file:
-
-.mode column 
-.headers on 
-.mode csv
-.output D:/Documents/GitHub/Figment/Data/Pitchers.csv
-
-SELECT `Name`, `Level`, School, Competition, `Commit`, W, L, ERA, IP, R, ER, BB, K, WHIP
-FROM Career
-WHERE ERA < 1.50
-AND IP > 40
-ORDER BY ERA
-;
-
-## And then, to return to the console:
-
-.output stdout
-
-## Enjoy the query finding! I plan on making updates, so make sure to check Github for updates. If you find any
-## errors or would like to see other stats included, please let me know and I would be more then willing to help
-## troubleshoot issues or add columns.
-
-## I plan on saving all draft classes (I retroactively was able to get 1934 it is just missing a few metrics) so
-## we can look back and compare current classes to past classes. I eventually hope to create another database for
-## active players (and potentially all players), but for now I am just working on getting all the draft classes in
-## and work out any kinks I find before adventuring too far out.

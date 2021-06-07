@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+6-7-21: Major update just in time for the 1937 Draft! Now you can access past draft classes! Added the 1934 and 1935 draft class to the Databases file. The 1934 databse doesn't have demands, but the 1935 class has demands from the end of the season. Also added the Ultimate Draft Database which has the historical single seasons for 1934, 1935, and 1936.
+
 4-17-21: Fixed demand to be numbers for 1936 Draft Class. Will show up on 1936 Season and Career statistics.
 
 4-17-21: Added the brand new 1939 draft class! Changed the name of the origional database to 1935. New database for the 1936 class named Draft. Edited tables to take out "Year" and "Notes" coulmns. Added 1936 statistics for all 1936, 1937, 1938, and 1939 draftees. Updated career stats for all 1936, 1937, and 1938 draftees. Added new players created in the June draft reveal. Added 1936 amateur statistics.
