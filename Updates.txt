@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+9-21-21: Created 1939 Draft Database. Filled the database with statistics for the 1936, 1937, and 1938 season as well as career statistics for each eligible player.
+
 8-17-21: Created 1938 Draft Database. Added 1938 season stats and updated career stats for the 1938, 1939, and 1940 draft class. Added 1938 season stats and career stats for the 1941 draft class. Updated the Ultimate Draft Database to contain stats for the 1938 season.
 
 7-14-21: Fixed Ultimate Draft Database to ignore initial row (headers). Will not be fixed for the past drafts, but will take into effect for the 1938 draft and on.
