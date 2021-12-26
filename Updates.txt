@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+12-26-21: Updated the 1940 Draft Database by addng 1940 statistics for each player in the pool. Updated carer statistics for teh 1940, 1941, and 1942 class. Updated the Ultimate Draft Database to contain stats for the 1940 season.
+
 12-3-21: Created 1940 Draft Database. Filled the database with statistics for the 1937, 1938, and 1939 season as well as career statistics for each eligible player.
 
 10-21-21: Updated the 1939 Draft Database by adding 1939 statistics for each player in the pool. Updated career statistics and added career statistics for first year players. Added 1939 stats for the 1940 and 1941 draft class and updated career stats for the 1940 and 1941 draft class. Added 1939 season stats and career stats for the 1942 draft class. Updated the Ultimate Draft Database to contain stats for the 1939 season.
