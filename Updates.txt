@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+2-25-22: Updated the 1941 Draft Database with 1941 statistics. Updated career values for the 1941 draft class. Added 1941 stats for the 1942, 1943, and 1944 draft classes. Updated career stats for the 1942 and 1943 draft classes. Updated the Ultimate Draft Database to contain stats for the 1941 season.
+
 2-5-22: Created the 1941 Draft Database. Added new players to the class with no statistics into the career CSV.
 
 1-21-22: Added stats for the 1943 draft class. Updated 1940 Amateur Stats to include 1943 draft class stats.
