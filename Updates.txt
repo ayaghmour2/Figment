@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+4-22-22: Created database for the 1942 draft class. Filled database with stats from 1939, 1940, 1941, and career totals. Created a table for 1942 with no stats, but the new additions to the draft class who currently have no statistics.
+
 2-25-22: Updated the 1941 Draft Database with 1941 statistics. Updated career values for the 1941 draft class. Added 1941 stats for the 1942, 1943, and 1944 draft classes. Updated career stats for the 1942 and 1943 draft classes. Updated the Ultimate Draft Database to contain stats for the 1941 season.
 
 2-5-22: Created the 1941 Draft Database. Added new players to the class with no statistics into the career CSV.
