@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+10-26-22: Created database for the 1944 draft class. Filled database with stats from 1941, 1942, 1943, and 1944. Added 1944 stats to the Ultimate Draft Database. Updated career stats for the 1944, 1945, and 1946 draft class. Added 1944 statistics for the 1944, 1945, 1946, and 1947 draft classes
+
 8-4-22: Created database for the 1943 draft class. Filled database with stats from 1940, 1941, 1942, and 1943. Added 1943 stats to the Ultimate Draft Database. Updated career values for the 1943, 1944, and 1945 draft class. Added csv files for the 1944, 1945, and 1946 draft classes. Updated career stats for 1944 and 1945.
 
 5-13-22: Updated 1942 Draft Database with stats from the 1942 season. Added csv files for the 1942 season for the 1942, 1943, 1944, and 1945 draft classes. Added 1942 stats to the Ultimate Draft Database. Updated career values for the 1942, 1943, and 1944 draft classes.
