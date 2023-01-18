@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+1-18-23: Used proper capitalization on the "Name" row for the 1934-1940 Amateur Stats.
+
 1-14-23: Created database for the 1945 draft class. Filled database with stats from 1942, 1943, 1944, and 1945. Added 1945 stats to the Ultimate Draft Database. Updated career stats for the 1945, 1946, and 1947 draft class. Added 1944 statistics for the 1945, 1946, 1947, and 1948 draft classes.
 
 10-26-22: Created database for the 1944 draft class. Filled database with stats from 1941, 1942, 1943, and 1944. Added 1944 stats to the Ultimate Draft Database. Updated career stats for the 1944, 1945, and 1946 draft class. Added 1944 statistics for the 1944, 1945, 1946, and 1947 draft classes.
