@@ -8,9 +8,9 @@ sqlite3
 ## To load the already created database, use the second portion of the code. Make sure to
 ## replace the directory with your personal directory where your github is located.
 
-## .open --new  "D:/Documents/GitHub/Figment/Database/1945 Draft.db"
+## .open --new  "D:/Documents/GitHub/Figment/Database/1946 Draft.db"
 ## .open --new  "D:/Documents/GitHub/Figment/Database/Ultimate Draft Database.db"
-.open "D:/Documents/GitHub/Figment/Database/1944 Draft.db"
+.open "D:/Documents/GitHub/Figment/Database/1946 Draft.db"
 .open "D:/Documents/GitHub/Figment/Database/Ultimate Draft Database.db"
 
 ## You will also want to turn on headers and change the mode to column for nicer output in
@@ -26,7 +26,7 @@ sqlite3
 
 ## This portion is not needed to run, but it shows how each table was created.
 
-CREATE TABLE "1945"
+CREATE TABLE "1946"
 (
   ID Text ,
   Position Text ,
@@ -116,7 +116,7 @@ CREATE TABLE "1945"
 )
 ;
 
-.import --csv --skip 1 "D:/Documents/GitHub/Figment/Data/Draft Classes/1945/1945.csv" "1945"
+.import --csv --skip 1 "D:/Documents/GitHub/Figment/Data/Draft Classes/1946/1946.csv" "1946"
 
 CREATE TABLE "Career"
 (
@@ -208,9 +208,9 @@ CREATE TABLE "Career"
 )
 ;
 
-.import --csv --skip 1 "D:/Documents/GitHub/Figment/Data/Draft Classes/1945/Career.csv" "Career"
+.import --csv --skip 1 "D:/Documents/GitHub/Figment/Data/Draft Classes/1946/Career.csv" "Career"
 
-CREATE TABLE "1945 Season"
+CREATE TABLE "1946 Season"
 (
   ID Text ,
   Position Text ,
@@ -300,7 +300,7 @@ CREATE TABLE "1945 Season"
 )
 ;
 
-.import --csv --skip 1 "D:/Documents/GitHub/Figment/Data/Amateur Stats/1945.csv" "1945 Season"
+.import --csv --skip 1 "D:/Documents/GitHub/Figment/Data/Amateur Stats/1946.csv" "1946 Season"
 
 ## If you ever need to remove a table, you can use the following function:
 
