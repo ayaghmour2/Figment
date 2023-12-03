@@ -1,5 +1,7 @@
 UPDATES! Newest on top!
 
+12-3-23: Created database for the 1949 draft class. Filled database with stats from 1946, 1947, 1948, and 1949. Updated career stats for the 1949, 1950, and 1951 draft classes. Added stats for the 1952 draft class. Added season stats for the 1949 season. Added 1949 stats to the Ultiamte Draft Database.
+
 9-6-23: Created database for the 1948 draft class. Filled database with stats from 1945, 1946, 1947, nd 1948. Updated career stats for the 1948, 1949, and 1950 draft classes. Added season stats for the 1948 season. Updated career stats for the 1949 and 1950 draft class. Added 1948 stats to the Ultimate Draft Database.
 
 6-20-23: Updated 1947 draft database with stats from the 1947 season. Updated career stats. Updated career stats for the 1948 and 1949 draft classes. Added 1947 stats for the 1948, 1949, and 1950 draft classes. Added 1947 stats to the Ultimate Draft Database.
@@ -51,7 +53,3 @@ UPDATES! Newest on top!
 2-19-21: Fixed default batting query to also display OPS. Added information on how to load the created database (you do not create it each time). Added a CSV file with all HS/COL stats accumulated during the 1935 season. Note that for this file the Primary Key is ID, not Name, as there are dupliactes in the pool.
 
 2-18-21: Added default queries to show default batting and pitching stats as well as general information.
-
-
-
-
